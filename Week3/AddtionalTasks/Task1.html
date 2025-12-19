@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additonal Tasks - Task 1</title>
+</head>
+<body>
+
+<!--
+Create a simple registration form. Your form should include different input types for first and last name (one field here is enough), username, email, age, phone number, and gender. Use the submit button to submit the form. The form method should be POST. Label each input field properly using the <label> element. All fields should have the required attribute. Add a form title as well.    
+-->
+
+    <section>
+        <form action="#" method="POST">
+            <h1 style="color: green; text-align: center;">
+                Registration Form
+            </h1>
+
+            <hr>
+            
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="registration-form" placeholder="eg. Tarik Sorguč" required><br><br>
+
+            <label for="username">Username: </label>
+            <input type="text"id="username" name="registration-form" placeholder="eg. sorgerator" required><br><br>
+
+            <lable for="age">Age: </lable>
+            <input type="age" id="age" name="registration-form" placeholder="eg. 21" required><br><br>
+
+            <lable for="email">Email:</lable>
+            <input type="email" id="email" name="registration-form" placeholder="eg. tarik.sorguc@example.com" required><br><br>
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" name="registration-form" placeholder="eg. 061 234 567" required><br><br>
+
+            <lable for="gender">Gender: </lable>
+            <select id="gender" name="registration-form" required>
+                <option selected disabled>Choose one</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+</body>
+</html>

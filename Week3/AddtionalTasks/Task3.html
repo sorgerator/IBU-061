@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Tasks - Task 3</title>
+</head>
+<body>
+    
+<!--
+Create a feedback form where the user can provide feedback. The form should include an email input field, password input field, feedback as a multi-line text input, drop-down menu to choose where the users have heard about the CV Creator Tool (options should be “Facebook”, “LinkedIn”, “Instagram”, “TikTok”, “Others”). LinkedIn should be selected by default. Put one checkbox, if the user wants to sign up for the newsletter. Add three radio buttons with options “Yes”, “No”, and “Maybe” to answer the question, if the user would want to use this CV Creator Tool again. Put radio buttons into a group. “Yes” should be selected by default. Add validation for the email and password fields (both should be required). Make sure to include labels for each input field. The form method should be POST. Add a form title as well.
+-->
+
+    <section>
+        <form action="#" method="POST">
+            <h1 style="color: green; text-align: center;">
+                CV Creator Tool Feedback Form
+            </h1>
+
+            <hr>
+
+            <label for="email"><b>Email:</b> </label>
+            <input type="email" id="email" name="feedback-form" placeholder="eg. tarik.sorguc@example.com" required><br><br>
+            
+            <label for="password"><b>Password:</b> </label>
+            <input type="password" id="password" name="feedback-form" placeholder="eg. 12345678" required><br><br>
+
+            <label for="feedback"><b>Your Feedback:</b> </label>
+            <textarea id="feedback" name="feedback-form" rows="4" cols="50" placeholder="Your experience using the CV Creator Tool" required><br><br>
+
+            <label for="outreach"><u>How did you hear about our CV Creator Tool?</u></p>
+            <select id="outreach" name="feedback-form" required>
+                <option selected disabled>Choose one option</option>
+                <option value="facebook">Facebook</option>
+                <option value="instagram">Instagram</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="tiktok">TikTok</option>
+                <option value="others">Others</option>
+            </select><br><br>
+
+            <input type="checkbox" id="newsletter" name="feedback-form">
+            <label for="newsletter"><b><u>Sign up for the newsletter</u></b></label><br><br>
+
+            <p>
+                <b>
+                    <i>
+                        Would you use this CV Creator Tool again?
+                    </i>
+                </b>
+            </p>
+            
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="feedback-form" value="yes" checked required>
+
+            <label for="no">No</label>
+            <input type="radio" id="no" name="feedback-form" value="no" required>
+
+            <label for="maybe">Maybe</label>
+            <input type="radio" id="maybe" name="feedback-form" value="maybe" required>
+
+            <button type="submit" style="background-color: green; text-align: center;">Submit Feedback</button>
+        </form>
+    </section>
+
+</body>
+</html>
