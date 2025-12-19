@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3</title>
+</head>
+<body>
+<h1>HTML Forms</h1>
+
+<!--
+1.Create a selection Dropdown:
+~Use the <select> element for a dropdown menu.
+~Add a label: "Choose your gift".
+~Provide options: Watch, Book, Perfume, Headphones.
+~Set "Book" as the default selection.
+~Add a submit button.
+-->
+
+    <form>
+        <label for="gift-choice">Choose your gift:</label>
+
+        <select id="gift-choice" name="gifts" required>
+            <label>Choose your gift</label>
+            <option value="watch">Watch</option>
+            <option value="book" selected>Book</option>
+            <option value="perfume">Perfume</option>
+            <option value="Headphones">Headphones</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+<!--
+2. Create a survey form:
+~Add a question as a paragraph: "What types of music do you enjoy?"
+~Provide checkboxes for multiple selections: Rock, Pop, Jazz, Classical.
+~Users should be able to select multiple options.
+~Add a submit button.
+~Add the attribute action="#" to indicate form submission.
+-->
+
+    <form  action="#"> 
+        <p>What type of music do you enjoy?</p>
+        
+        <input type="checkbox" id="rock" name="music" value="rock">
+        <lable for="rock">Rock</lable><br>
+
+        <input type="checkbox" id="pop" name="music" value="pop">
+        <label for="pop">Pop</label><br>
+
+        <input type="checkbox" id="jazz" name="music" value="jazz">
+        <label for="jazz">Jazz</label><br>
+        
+        <input type="checkbox" id="classical" name="music" value="classical">
+        <label for="classical">Classical</label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+<!--
+3. Create a form to Select a Payment Method:
+~Add a question: "Choose your preferred payment method:"
+~Provide radio buttons: Credit Card, PayPal, Bank Transfer.
+~Add a submit button.
+~Add the attribute action="#".
+-->
+
+<form action="#">
+    <p>Choose your prefered payment method:</p>
+
+    <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+    <label for="credit-card">Credit Card</label>
+
+    <input type="radio" id="paypal" name="payment-method" value="paypal">
+    <label for="paypal">PayPal</label>
+
+    <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+    <label for="bank-transfer">Bank Transfer</label>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
