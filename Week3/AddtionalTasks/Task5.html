@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Ž, initial-scale=1.0">
+    <title>Additonal Tasks - Task 5</title>
+</head>
+<body>
+    
+<!--
+Create an IT center ticket form that allows users to upload a file. The form should include a drop-down list for selecting the type of problem (options: “CV Creator Tool”, “Data Privacy Concerns”, “Help & Guidance”, “File upload issues”). Radio buttons for selecting urgency (options: “Not urgent”, “Mild”, “Highly Urgent”). A file upload input to upload a picture (allowed file types: JPG, JPEG, PNG). The drop-down list should have “Help & Guidance” selected by default. The form should require the user to upload a document. Use proper labels for all inputs. “Mild” should be chosen by default. Add a form title as well.
+-->
+
+    <section>
+        <form action="#" method="POST">
+            <h3 style="color: green; text-align: center;">
+                IT Center Ticket Form
+            </h3>
+
+            <hr>
+
+            <label for="problem">Type of Problem: </label>
+            <select id="problem" name="problem" required>
+                <option value="cv-creator-tool">
+                    CV Creator Tool
+                </option>
+                <option value="data-privacy">
+                    Data Privacy Concerns
+                </option>
+                <option value="help-guidance" selected>
+                    Help & Guidance
+                </option>
+                <option value="file-upload-issues">
+                    File upload issues
+                </option>
+            </select><br>
+
+            <p>Select Urgency: </p>
+            <input type="radio" id="not-urgent" name="not-urgent" value="not-urgent" required>
+            <label for="not-urgent">Not urgent</label><br>
+
+            <input type="radio" id="mild" name="mild" value="mild" checked required>
+            <label for="mild">Mild</label><br>
+
+            <input type="radio" id="highly-urgent" name="highly-urgent" value="highly-urgent" required>
+            <label for="highly-urgent">Highly Urgent</label><br><br>
+
+            <label for="upload">
+                Upload a Picture (JPG, JPEG, PNG): 
+            </label>
+            <input type="file" id="upload" name="upload" alt="Choose File" accept=".jpg, .jpeg, .png" required><br><br>
+
+            <button type="submit" style="background-color: green; color: white">Submit Ticket</button>
+        </form>
+    </section>
+
+</body>
+</html>
