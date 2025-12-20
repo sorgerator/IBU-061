@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Tasks - Task 6</title>
+</head>
+<body>
+    
+<!--
+Create a related group of information with the title “Details”. The group should contain three input fields, one for email, one for website link, and one for password. Below that one, create another group with the title “Reasons for ending subscription”. Inside put a drop-down list with options “Bad quality”, “Small Size”, and “Other”. Make “Other” selected by default. Add three radio buttons that would answer the question “Would you use one of the other tools again?” with options “Yes”, “No”, or “Maybe”. “Yes” should be selected by default. Put a multi-line field for additional comments, but this field is not required. Add an image button, and put a picture of your choice. Every input should have an appropriate label. The method should be POST. Add a form title as well.
+-->
+
+    <section>
+        <form action="#" method="POST">
+            <h3 style="color: green; text-align: center;">
+                Subscription Management Form
+            </h3>
+
+            <hr>
+
+            <fieldset>
+                <legend>Details</legend>
+
+                <label for="email"><b><u>Email:</u></b> </label>
+                <input type="email" name="email" id="email" required><br><br>
+
+                <lable for="link"><b><u>Link:</u></b> </lable>
+                <input type="text" name="link" id="link" required><br><br>
+
+                <label for="password"><b><u>Password:</u></b> </label>
+                <input type="password" name="password" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Reasons for Ending Subscription
+                </legend>
+
+                <label for="reason"><b>Select Reason: </b></label>
+                <select name="reason" id="reason" required>
+                    <option value="bad-quality">Bad quality</option>
+                    <option value="small-size">Small size</option>
+                    <option value="other" selected>Other</option>
+                </select><br><br>
+
+                <p>Would you use one of our other tools again?</p>
+                
+                <input type="radio" id="yes" name="yes" value="yes" required>
+                <label for="yes">Yes</label><br>
+                
+                <input type="radio" id="no" name="no" value="no" required>
+                <label for="no">No</label><br>
+
+                <input type="radio" id="maybe" name="maybe" value="maybe" required>
+                <label for="maybe">Maybe</label><br><br>
+
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" required></textarea>
+            </fieldset><br><br>
+
+            <button type="submit" style="background-color: green; color: white;">SUBMIT</button>
+        </form>
+    </section>
+</body>
+</html>

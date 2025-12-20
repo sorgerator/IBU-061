@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Tasks- Task 4</title>
+</head>
+<body>
+
+<!--
+Create a form that will enable the user to enter all the information that you put in your CV in the last lab. Separate form parts by different sections (introduction, education, etc.). Add a file upload option to add a CV image (accept .png, .jpeg, .jpg).
+-->
+
+    <section>
+        <form action="#">
+            <h3 style="color: green; text-align: center;">
+                CV Data Entry Form
+            </h3>
+
+            <hr>
+
+            <fieldset>
+                <legend>
+                    <b>Personal Information</b>
+                </legend>
+
+                <label for="name">Full Name: </label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" required><br><br>
+
+                <label for="location">Location: </label>
+                <input type="text" id="location" name="location" required><br><br>
+
+                <label for="profile-picture">Upload Profile Picture: </label>
+                <input type="file" id="profile-picture" name="profile-picture" src="submit_button.jpg" accept=".png, .jpeg, .jpg" alt="Choose File" required> 
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <b>Introduction</b>
+                </legend>
+
+                <label for="introduction">
+                    Write a short introduction about yourself: 
+                </label><br>
+                <textarea id="introduction" name="introduction" rows="4" cols="50" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <b>Skills</b>
+                </legend>
+
+                <p>Select your skills: </p>
+                
+                <input type="checkbox" id="html" name="skills" value="html" required>
+                <label for="html">HTML</label><br>
+
+                <input type="checkbox" id="css" name="skills" value="css" required>
+                <label for="css">CSS</label><br>
+
+                <input type="checkbox" id="js" name="skills" value="js" required>
+                <label for="js">JavaScript</label><br>
+
+                <input type="checkbox" id="react" name="skills" value="react" required>
+                <label for="react">React</label><br>
+
+                <input type="checkbox" id="node" name="skills" value="node" required>
+                <label for="node">Node.js</label><br>
+
+                <input type="checkbox" id="express" name="skills" value="express" required>
+                <label for="express">Express</label><br>
+
+                <input type="checkbox" id="git" name="skills" value="git" required>
+                <label for="git">Git</label><br>
+
+                <input type="checkbox" id="wpo" name="skills" value="wpo" required>
+                <label for="wpo">Web Performance Optiomization</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <b>Experience</b>
+                </legend>
+
+                <label for="position">Current Position: </label>
+                <input type="text" id="position" name="position" required><br><br>
+
+                <label for="experience">Describe your experience: </label><br>
+                <textarea id="experience" name="example" rows="4" cols="50" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <b>Education & Certifications</b>
+                </legend>
+
+                <label for="degree">Degree: </label>
+                <select id="degree" required>
+                    <option value="high-school" selected>
+                        High School Diploma
+                    </option>
+                    <option value="assosiates-degree">
+                        Assosiates Degree
+                    </option>
+                    <option value="bachelors-degree">
+                        Bachelor's Degree
+                    </option>
+                    <option value="masters-degree">
+                        Master's Degree
+                    </option>
+                    <option value="phd-degree">
+                        Phd Degree
+                    </option>
+                </select><br><br>
+
+                <label for="certifications">Certifications: </label><br>
+                <textarea id="certifications" name="certifications" rows="4" cols="50" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <b>Personal Projects</b>
+                </legend>
+
+                <label for="projects">Describe your personal projects</label><br>
+                <textarea id="projects" name="projects" rows="4" cols="50" required></textarea>
+            </fieldset>
+
+            <button type="submit" style="background-color: green; color: white; text-align: center;">
+                Submit CV
+            </button>
+        </form>
+    </section>
+</body>
+</html>
