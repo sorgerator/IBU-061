@@ -1,0 +1,95 @@
+/*
+1. entire nav element
+Bottom border: 1px solid red
+Padding: 10px
+Bold text
+Text color: orange
+*/
+
+nav {
+    border-bottom: 1px solid red;
+    padding: 10px;
+    font-weight: bold;
+    color: orange;
+}
+
+/*
+2. container class
+max-width: 720px
+height: auto
+display: flex
+justify-content: center
+*/
+
+.container {
+    max-width: 720px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+3. button inside container class
+Border radius: 8px
+Background: green
+Text color: white
+No border
+Padding: padding-left: 20px; padding-right: 30px
+*/
+
+.container button {
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+/*
+4. card element
+Background: blue
+Border radius: 8px
+Width: 300px
+Padding: 16px on all sides
+Text color: red
+Text alignment: centered
+*/
+
+#card {
+    background-color: blue;
+    border-radius: 8px;
+    width: 300px;
+    padding: 16px;
+    color: red;
+    text-align: center;
+}
+
+/*
+5. apply to all <img> elements
+Height: 50px
+Width: 50px
+Margin (top & bottom): 8px
+*/
+
+img {
+    height: 50px;
+    width: 50px;
+    margin-top: 8px;
+    margin-bottom: 8px; 
+}
+
+/*
+6. button inside card
+Fully rounded (50% border radius)
+Background: orange
+Text color: black
+No border
+*/
+
+.card button {
+    border-radius: 50%;
+    background-color: orange;
+    color: black;
+    border: none;
+}
