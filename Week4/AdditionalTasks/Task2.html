@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Tasks - Task 2</title>
+</head>
+<body>
+    
+<!--
+Create a form that saves user input in local storage. 
+Create a new HTML file with a <form> element that includes
+A text input for the user's first name.
+A text input for the user's last name.
+A text but ton for the user’s Job Title
+A submit button.
+Use JavaScript to save the first name and last name in local storage when the form is submitted.
+After submission, display a message on the web page that includes the full name (e.g., "Hello, John Doe, Software Engineer!").
+Make sure to clear the input fields after the submission to allow new entries. 
+-->
+
+    <section>
+        <h2 style="text-align: center;">CV Data Entry Form</h2>
+        <form id="userForm">
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstName" name="first-name" required><br><br>
+
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName" name="last-name" required><br><br>
+
+            <label for="jobTitle">Job Title: </label>
+            <input type="text" id="jobTitle" name="jobTitle" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <h3 id="greetingMessage"></h3>
+
+    <script>
+        const userForm = document.getElementById('userForm');
+        const greetingMessage = document.getElementById('greetingMessage');
+        
+        document.getElementById("userForm").addEventListener("submit", function(event){
+            event.preventDefault();
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const jobTitle = document.getElementById("jobTitle").value;
+            localStorage.setItem("firstName", firstName);
+            localStorage.setItem("lastName", lastName);
+            localStorage.setItem("jobTitle", jobTitle);
+            document.getElementById("greetingMessage").innerText = `Hello, ${firstName} ${lastName}, ${jobTitle}`; this.reset();
+        });
+    </script>
+
+</body>
+</html>

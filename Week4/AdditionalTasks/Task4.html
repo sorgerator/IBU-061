@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Tasks - Task 4</title>
+</head>
+<body>
+    
+<!--
+Implement Geolocation to Display the User’s current Location
+Modify your cv.html file to include a button that triggers geolocation when clicked. The location (latitude and longitude) will be displayed on the page.
+Add a button labeled "Get My Location" that triggers the Geolocation API.
+Once the button is clicked, the user’s current latitude and longitude are displayed on the webpage.
+If there’s an error (e.g., the user denies permission or the location is unavailable), appropriate error messages are displayed.
+Use JavaScript and the Geolocation API to get the user's current position and display it on the webpage.
+-->
+
+    <section id="location-section">
+        <h3>Current Location</h3>
+        <p>Click the button bellow to display your current coordinates on the CV.</p>
+
+        <button onclick="getLocation()">Get My Location</button>
+
+        <p id="location-display"></p>
+    </section>
+
+    <script>
+        const display = document.getElementById("location-display");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                display.innerHTML = "Location...";
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                display.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            display.innerHTML = `<strong>Latitude;</strong> ${lat}<br><strong>Longitude:</strong> ${lon}`;
+        }
+
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    display.innerHTML = "User denied the request for Geolocation.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    display.innerHTML = "Location information is unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    display.innerHTML = "The request to get user location timed out.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    display.innerHTML = "An unknown error occurred.";
+                    break;
+            }
+        }
+    </script>
+
+</body>
+</html>
