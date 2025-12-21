@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Tasks - Task 3</title>
+    <style>
+        #skills-container {
+            width: 300px;
+            min-height: 150px;
+            padding: 10px;
+            border: 2px dashed #ccc;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f0f0f0;
+            border: 1px solid #aaa;
+            cursor: move;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+Implement a simple drag and drop feature using HTML5.
+Create a new HTML file called skills.html to handle drag and drop functionality for your Cv skills page with the following elements:
+A <div> element that represents a "Skills" section of the CV (with a specific ID for the drop area).
+At least two <p> elements, each containing a skill (e.g., "HTML," "CSS"), set as draggable (use the draggable="true" attribute).
+Use JavaScript to implement the drag and drop functionality:
+Allow the <div> element to accept dropped elements by preventing the default behavior during the ondragover event.
+When an element is dropped into the <div>, append it to the drop area to reorder skills.    
+-->
+
+    <section>
+        <h1>My CV Skills</h1>
+        <p>Drag the skills below into the section: </p>
+        <div id="skills-container" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <h3>Skills Selected</h3>
+        </div>
+
+        <p id="skill1" class="skill" draggable="true" ondragstart="drag(event)">HTML</p>
+        <p id="skill2" class="skill" draggable="true" ondragstart="drag(event)">CSS</p>
+        <p id="skill3" class="skill" draggable="true" ondragstart="drag(event)">JavaScript</p>
+    </section>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
+</body>
+
+</html>
