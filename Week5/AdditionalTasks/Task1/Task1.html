@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Tarik Sorguč</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--
+Additional practice task: 
+~Create a web application that will serve as a CV page.
+~Elements to be added: 
+1. Different types of headings
+2. Paragraphs with different formatting options (italic, bold, underlined)
+3. Image with its attributes
+4. Horizontal line
+5. Preformatted text
+6. Lists (both ordered, unordered  and descriptive lists)
+7. Quotations
+8. Link    
+-->
+
+    <div class="cv-container">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img src="image/me.jpg" alt="Tarik's picture" width="200" class="avatar">
+            </div>
+
+            <section class="sidebar-section">
+                <h3>Contact</h3>
+                
+                <p>Phone: 00387 60 333 13 33</p>
+                <p>Full Name: Tarik Sorguč</p>
+                <p>Email: <a href="mailto:tarik.sorguc1@gmail.com" target="_blank">tarik.sorguc1@gmail.com</a></p>
+                <p>Location: Sarajevo, Bosnia and Herzegovina</p>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>Education & Certifications</h3>
+                
+                <ol type="1">
+                    <li>Persuing Bachelor's Degree in IT - <u><i>International Burch Unicersity</i></u></li>
+                    <li>High School Diploma - <u><i>Gymnasium Dobrinja</i></u></li>
+                    <li>Responsive Web Design - <u><i>FreeCodeCamp</i></u></li>
+                </ol>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>Skills</h3>
+    
+                <p>Skills:</p>
+                <ul type="disc">
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>React, Redux, Node.js</li>
+                    <li>RESTful APIs, Express.js</li>
+                    <li>Version Control(Git, GitHub)</li>
+                    <li>Web Performance  Optiomization, Search Engine Optimisation</li>
+                </ul>
+            </section>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Tarik Sorguč</h1>
+                <p class="job-title">Web Developer</p>
+            </header>
+
+            <section>
+                <h2>Experience</h2>
+                
+                <ul>
+                    <li><b>Web Developer</b> at AshonArt Corp (2025-present)</li>
+                    <li>Freelance <b>Frontend Developer</b> (2025-present)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Personal Projects</h2>
+                
+                <hr>
+                
+                <div class="entry">
+                    <p><strong>Task Manager:</strong> Built using React and Node.js.</p>
+                    <p><strong>Portfolio Website:</strong> Showcasing various work.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>About</h2>
+
+                <hr>
+                
+                <p>Visit my <a href="https://github.com/sorgerator" target="_blank">GitHub profile</a> for more projects.</p>
+            </section>
+        </main>
+    </div>
+
+<hr>
+
+</body>
+</html>
