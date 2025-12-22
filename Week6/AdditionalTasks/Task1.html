@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Creator Tool Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .text-custom-green {
+            color: #28a745; 
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+        footer a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                CV Creator Tool
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">
+                            Features
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">
+                            Pricing
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-2 mt-2 mt-lg-0">
+                    <a href="signin.html" class="btn btn-outline-light">
+                        Sign In
+                    </a>
+                    <a href="register.html" class="btn btn-outline-light">
+                        Register
+                    </a>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#notificationsModal">
+                        Notifications
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="notificationsModal" tabindex="-1" aria-labelledby="notificationsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="notificationsModalLabel">
+                        Notifications
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    You have no new notifications at this time.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="home" class="container py-5 mt-5 text-center">
+        <div class="py-5">
+            <h1 class="display-4 fw-bold">
+                Welcome to CV Creator Tool
+            </h1>
+            <p class="lead text-muted">
+                Create, Customize, and Download Professional CVs in Minutes
+            </p>
+            <button class="btn btn-success btn-lg mt-3">
+                Create Your CV Now!
+            </button>
+        </div>
+    </section>
+
+    <section id="features" class="container py-5">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold">
+                            AI Plagiarism Checker
+                        </h3>
+                        <p class="card-text text-muted">
+                            Ensure originality with AI-powered plagiarism checks.
+                        </p>
+                        <button class="btn btn-primary">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold">
+                            Top 10 Interview Questions
+                        </h3>
+                        <p class="card-text text-muted">
+                            Prepare confidently with curated interview questions.
+                        </p>
+                        <button class="btn btn-primary">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3 mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold">
+                            Template Library
+                        </h3>
+                        <p class="card-text text-muted">
+                            Choose from a wide variety of CV templates.
+                        </p>
+                        <button class="btn btn-primary">
+                            Explore Templates
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-light py-5 text-center">
+        <div class="container">
+            <h2 class="fw-bold">
+                About CV Creator Tool
+            </h2>
+            <p class="lead text-custom-green mt-3">
+                CV Creator Tool is your go-to platform for building professional resumes. With a wide range of customizable templates, AI-powered tools, and expert resources, we help you stand out in the job market. Get ready to create a stunning CV that highlights your skills and achievements effortlessly.
+            </p>
+        </div>
+    </section>
+
+    <section id="faq" class="container py-5">
+        <h2 class="text-center fw-bold mb-4">
+            Frequently Asked Questions
+        </h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Question #1: Subscription Deadline
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Information about subscription deadlines goes here.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Question #2: Who can apply?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Details about eligibility for applying go here.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Question #3: How to apply?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        A step-by-step guide on how to apply goes here.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5 text-center">
+        <h2 class="fw-bold mb-4">
+            Check out Different Notification Types
+        </h2>
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-outline-primary btn-lg">
+                Notification 1
+            </button>
+            <button type="button" class="btn btn-danger btn-sm" disabled>
+                Notification 2 (Disabled)
+            </button>
+            <button type="button" class="btn btn-success">
+                Notification 3
+            </button>
+        </div>
+    </section>
+
+    <section id="pricing" class="container py-5 text-center">
+        <h2 class="fw-bold">
+            Pricing Plans
+        </h2>
+        <p class="text-muted">
+            Content for pricing plans will be placed here.
+        </p>
+    </section>
+
+    <section id="contact" class="container py-5 text-center">
+        <h2 class="fw-bold mb-4">
+            Our Location
+        </h2>
+        <div class="map-container shadow-sm p-1 bg-body rounded">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.856157636079!2d18.41307631550323!3d43.85625897910347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c8c481226b71%3A0x123456789abcdef!2sSarajevo%2C%20Bosnia%20and%20Herzegovina!5e0!3m2!1sen!2s!4v1633023226789!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4 text-center">
+        <div class="container">
+            <p class="mb-1">
+                &copy; 2024 CV Creator Tool. All rights reserved.
+            </p>
+            <p class="mb-2">
+                <a href="#" class="text-light text-decoration-underline mx-2 small">
+                    Privacy Policy
+                </a>
+                <a href="#" class="text-light text-decoration-underline mx-2 small">
+                    Terms of Service
+                </a>
+                <a href="#" class="text-light text-decoration-underline mx-2 small">
+                    Contact Us
+                </a>
+            </p>
+            <p class="small mb-0">
+                Contact: +38761234567
+            </p>
+            <p class="small mb-0">
+                Email: something@gmail.com
+            </p>
+            <p class="small mb-0">
+                Work Hours: 8:00 - 16:00 (Workdays only!)
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
