@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 - Lab Task 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--
+Requirements:
+1. Wrap the card in a max width container (max-w-sm) with shadow, rounded corners, border, and padding 4.
+2. The image should be full width with rounded-lg corners.
+3. Style the title as text-xl, bold, and margin-top 3.
+4. Style the paragraph as text-gray-600 and text-sm.
+5. Style the button as a blue background button with white text, padding-x 4, padding-y 2, rounded-md, hover:bg-blue-700, and full width on small screens.    
+-->
+
+    <div class="max-w-sm shadow-lg rounded-xl border border-gray-200 p-4 mx-auto">
+        <img src="https://via.placeholder.com/400x200" alt="Sample image" class="w-full rounded-lg">
+        <h2 class="text-xl font-bold mt-3">
+            Card Title
+        </h2>
+        <p class="text-gray-600 text-sm mt-2 mb-4">
+            This is some description text inside the card.
+        </p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 w-full transition-colors">
+            Read More
+        </button>
+    </div>
+
+</body>
+
+</html>

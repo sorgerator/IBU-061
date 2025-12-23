@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - CV Creator Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        button:not(.collapsed) svg {
+            transform: rotate(180deg);
+            transition: transform 0.3s ease;
+        }
+        button.collapsed svg {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+    <header class="bg-blue-600 text-white py-12 text-center shadow-inner">
+        <h1 class="text-4xl font-bold">
+            Frequently Asked Questions
+        </h1>
+        <p class="mt-2 opacity-90">
+            Find answers to common questions about our CV generator.
+        </p>
+    </header>
+
+    <main class="max-w-3xl mx-auto py-16 px-6">
+        <div class="accordion" id="faqAccordion">
+            <div class="mb-4 bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                <h2 class="mb-0">
+                    <button class="w-full flex justify-between items-center text-left px-6 py-5 font-semibold text-gray-800 hover:bg-gray-50 transition-colors focus:outline-none" 
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Is the CV Creator Tool free to use?
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="collapse show" data-bs-parent="#faqAccordion">
+                    <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed">
+                        Yes! Our basic templates and AI tools are free to use. We also offer premium templates and advanced features for a small monthly subscription.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4 bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                <h2 class="mb-0">
+                    <button class="w-full flex justify-between items-center text-left px-6 py-5 font-semibold text-gray-800 hover:bg-gray-50 transition-colors focus:outline-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Can I download my CV in PDF format?
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#faqAccordion">
+                    <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed">
+                        Absolutely. Once you finish editing, you can download your professional CV in PDF, DOCX, or plain text formats directly to your device.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4 bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                <h2 class="mb-0">
+                    <button class="w-full flex justify-between items-center text-left px-6 py-5 font-semibold text-gray-800 hover:bg-gray-50 transition-colors focus:outline-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        How many templates can I choose from?
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="collapse" data-bs-parent="#faqAccordion">
+                    <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed">
+                        We have a library of over 50 professional templates ranging from creative designs to standard corporate layouts, ensuring you find the right look for your industry.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-zinc-800 text-white py-10 text-center text-xs">
+        <p>
+            © 2024 CV Creator Tool. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

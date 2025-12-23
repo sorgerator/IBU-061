@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 - Task 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!--
+Requirements:
+1. Style the nav as a flex container with justify-between and items-center, padded y-4 and x-6, with a gray-800 background.
+2. All links should be white text, margin-x-3, uppercase, tracking-wide, and hover:text-gray-300.
+3. On small screens, the nav should stack vertically (flex-col) with space-y-2.
+4. On medium+ screens, it should display horizontally (flex-row) with space-x-6.
+-->
+    
+    <nav class="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-6 justify-between items-center py-4 px-6 bg-gray-800">
+        <a href="#" class="text-white mx-3 uppercase tracking-wide hover:text-gray-300 transition-colors">
+            Home
+        </a>
+        <a href="#" class="text-white mx-3 uppercase tracking-wide hover:text-gray-300 transition-colors">
+            About
+        </a>
+        <a href="#" class="text-white mx-3 uppercase tracking-wide hover:text-gray-300 transition-colors">
+            Services
+        </a>
+        <a href="#" class="text-white mx-3 uppercase tracking-wide hover:text-gray-300 transition-colors">
+            Contact
+        </a>
+    </nav>
+
+</body>
+</html>
