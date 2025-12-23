@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Creator Tool - Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #f8f9fa; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                CV Creator Tool
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card border-primary">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4 class="mb-0">
+                            User Registration
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <form class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label">Name: </label>
+                                <input type="text" class="form-control is-invalid" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email: </label>
+                                <input type="email" class="form-control is-invalid" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Gender: </label>
+                                <select class="form-select is-valid">
+                                    <option>Female</option>
+                                    <option>Male</option>
+                                </select>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mt-3">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="progress mt-5" style="height: 25px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark fw-bold" style="width: 75%">
+                        75%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 text-center mt-auto">
+         <div class="container">
+            <p>© 2024 CV Creator Tool. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        (() => {
+          'use strict'
+          const forms = document.querySelectorAll('.needs-validation')
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
