@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CV Creator Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+    <nav class="bg-blue-600 py-4 px-6 shadow-md">
+        <a href="#" class="text-white font-bold text-xl">
+            CV Creator Tool
+        </a>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center px-4 py-12">
+        <div class="max-w-md w-full bg-white rounded-xl shadow-lg border border-gray-200 p-8">    
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">
+                    Welcome Back
+                </h2>
+                <p class="text-gray-500 mt-2">
+                    Please enter your details to sign in.
+                </p>
+            </div>
+
+            <form action="cv.html" method="GET" class="space-y-6">
+                <div>
+                    <label for="username" class="block text-sm font-medium text-gray-700">
+                        Username
+                    </label>
+                    <input type="text" id="username" name="username" required class="w-full mt-1 px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200" placeholder="Enter your username">
+                </div>
+
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">
+                        Password
+                    </label>
+                    <input type="password" id="password" name="password" required class="w-full mt-1 px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200" placeholder="••••••••">
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transform active:scale-[0.98] transition-all duration-200">
+                    Sign In
+                </button>
+
+            </form>
+
+            <div class="mt-8 text-center text-sm text-gray-600">
+                <p>
+                    Don't have an account? 
+                    <a href="register.html" class="text-blue-600 font-semibold hover:underline">
+                        Register now
+                    </a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-zinc-800 text-white py-8 text-center text-xs">
+        <p>
+            © 2024 CV Creator Tool. All rights reserved.
+        </p>
+        <p class="mt-2 text-gray-400">
+            Work Hours: 8:00 - 16:00 (Workdays only!)
+        </p>
+    </footer>
+    
+</body>
+</html>
