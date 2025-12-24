@@ -1,0 +1,2 @@
+Create a pricing page for the CV Creator Tool Platform. Create a table with 4 columns (product name, price per piece, quantity, actual price). Actual price will be price per piece multiplied by quantity. Below the table, you should also have a “Buy” button. When a user clicks on this button, a modal with sum of all actual prices of all products should be shown. In the modal, also show the average price of the sum rounded up and down. You can create a page from scratch or modify the pricingPage.html from Week 6.
+
