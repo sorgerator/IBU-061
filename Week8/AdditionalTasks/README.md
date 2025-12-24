@@ -1,0 +1,10 @@
+By introducing Javascript you’ll be able to generate your own CV by introducing data related to yourself. What you need to do is to reuse the form that you’ve created in previous additional lab tasks and modify it a little bit to fit the data that you want to have inside your CV. After clicking on the submit button on the form your CV needs to appear filled with data you provided previously. Examples are given below: 
+
+As you can see, CV is filled with the data provided in the form. The way of implementing the logic for this is on your side, but some hint for that would be separating data in area fields in the form. For example, you can separate experience items with the comma and afterwards in javascript handle them by separating them again with the comma in the code.
+
+HINTS: Using DOM functions and properties can help you a lot to finish this task. Some of them will be listed in the following list: 
+1. document.createElement(‘elementToCreate’) => creating an element in your page
+2. yourElement.classList.add(‘yourClass1’, ‘yourClass2’) => when you retrieve the element from the page by using some of the predefined functions like getElementById you’ll be able to make some actions on that element. One of that actions is adding classes dynamically (added example before is doing exactly that) 
+3. yourElement.appendChild(anotherElement) - this is adding the element to the existing tag/element inside your page - you can use it where you need to add list items (<li></li>) to a predefined unordered/ordered list in your page. 
+4. document.querySelector(‘elementsPropertyForRetrieval’) - you can use querySelector method to retrieve element by any kind of an attribute that is related to element of interest
+5. .innerHTML - will help you to add HTML structure to already existing tags on your page. That will be crucial for stuff that doesn’t exist on your page. For example, you’ll only have skeleton elements (<main>, <section>, <article>, <body>, etc.) where you’ll put your additional elements dynamically through javascript. 
