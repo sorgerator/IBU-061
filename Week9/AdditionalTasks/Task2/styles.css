@@ -1,0 +1,25 @@
+body {
+    background-color: #fcfcfc;
+}
+
+header.bg-success {
+    background-color: #28a745 !important; 
+}
+
+.card {
+    transition: transform 0.2s;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.text-primary {
+    font-weight: 500;
+}

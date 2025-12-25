@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Tarik Sorguč",
+    "username": "tsorguc",
+    "email": "tsorguc@example.com",
+    "password": "12345678",
+    "age": 21,
+    "phone": "061-123-456",
+    "gender": "male"
+  },
+  {
+    "name": "Amina Sorguč",
+    "username": "amina_s",
+    "email": "amina_s@example.com",
+    "password": "securePass",
+    "age": 18,
+    "phone": "062-654-321",
+    "gender": "female"
+  }
+]
