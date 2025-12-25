@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Creator Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-dark bg-primary-custom px-4">
+        <span class="navbar-brand">
+            CV Creator Tool
+        </span>
+    
+        <div class="d-flex gap-3">
+            <a href="#" class="nav-link text-white">
+                Home
+            </a>
+            <a href="#" class="nav-link text-white">
+                Features
+            </a>
+            <button class="btn btn-light btn-sm" onclick="handleSignOut()">
+                Sign Out
+            </button>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5">
+        <h1>
+            Welcome to CV Creator Tool
+        </h1>
+        <p class="fs-4">
+            Create, Customize, and Download Professional CVs in Minutes
+        </p>
+        <button class="btn btn-success-custom text-white px-4 py-2 my-3">
+            Create Your CV Now!
+        </button>
+
+        <div class="duration-display text-primary-custom">
+            Session Duration: 
+            <span id="timer">
+                00:00:00
+            </span>
+        </div>
+
+        <div class="row g-4 mt-2">
+            <div class="col-md-4">
+                <div class="feature-card p-4">
+                    <h5>
+                        AI Plagiarism Checker
+                    </h5>
+                    <button class="btn btn-primary mt-3">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="feature-card p-4">
+                    <h5>
+                        Top 10 Interview Questions
+                    </h5>
+                    <button class="btn btn-primary mt-3">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="feature-card p-4">
+                    <h5>
+                        Template Library
+                    </h5>
+                    <button class="btn btn-primary mt-3">
+                        Explore Templates
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="summaryModal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary-custom text-white">
+                    <h5 class="modal-title">
+                        Session Summary
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" onclick="redirectToLogin()"></button>
+                </div>
+            
+                <div class="modal-body text-center py-4">
+                    <p id="finalDurationText" class="fs-5"></p>
+                    <button class="btn btn-primary px-4" onclick="redirectToLogin()">
+                        OK
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let timerInterval;
+
+        function updateTimer() {
+            const start = localStorage.getItem('sessionStart');
+            const now = new Date().getTime();
+            const diff = Math.floor((now - start) / 1000);
+
+            const hrs = Math.floor(diff / 3600).toString().padStart(2, '0');
+            const mins = Math.floor((diff % 3600) / 60).toString().padStart(2, '0');
+            const secs = (diff % 60).toString().padStart(2, '0');
+
+            document.getElementById('timer').innerText = `${hrs}:${mins}:${secs}`;
+    }
+
+        timerInterval = setInterval(updateTimer, 1000);
+
+        function handleSignOut() {
+            clearInterval(timerInterval);
+            const totalDuration = document.getElementById('timer').innerText;
+            document.getElementById('finalDurationText').innerText = "Your session lasted: " + totalDuration;
+        
+            const myModal = new bootstrap.Modal(document.getElementById('summaryModal'));
+            myModal.show();
+        }
+
+        function redirectToLogin() {
+            localStorage.removeItem('sessionStart');
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>

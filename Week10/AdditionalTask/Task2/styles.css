@@ -1,0 +1,16 @@
+.btn-info {
+    background-color: #0dcaf0 !important; 
+    border: none;
+    font-weight: 500;
+}
+
+.card-title {
+    font-size: 1.1rem;
+}
+
+.text-truncate-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
