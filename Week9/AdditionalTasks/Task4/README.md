@@ -1,0 +1,1 @@
+Create a Template Suggestion Page. Page should contain a list with different skills. Based on the chosen skills, a CV template should be suggested to the user. Use sets from JavaScript to achieve this. 
